@@ -2964,9 +2964,6 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.StrictMode), {
     lineNumber: 9,
     columnNumber: 3
 }, undefined));
-// 为组件添加按钮事件
-const articlecontainer = document.querySelector(".article-container");
-console.log(articlecontainer);
 
   $parcel$ReactRefreshHelpers$92f7.postlude(module);
 } finally {
@@ -18581,15 +18578,16 @@ parcelHelpers.export(exports, "default", ()=>App);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _filelistJson = require("./file/filelist.json");
 var _filelistJsonDefault = parcelHelpers.interopDefault(_filelistJson);
-const Htmlfilelist = (0, _filelistJsonDefault.default).map(_c = (file)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+const Htmlfilelist = (0, _filelistJsonDefault.default).map(_c = (file)=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
         class: "article-container",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: file.title
             }, void 0, false, {
                 fileName: "scource/App.js",
-                lineNumber: 5,
-                columnNumber: 9
+                lineNumber: 8,
+                columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 class: "author_date",
@@ -18600,30 +18598,31 @@ const Htmlfilelist = (0, _filelistJsonDefault.default).map(_c = (file)=>/*#__PUR
                 ]
             }, void 0, true, {
                 fileName: "scource/App.js",
-                lineNumber: 6,
-                columnNumber: 9
+                lineNumber: 9,
+                columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 class: "content",
                 children: file.content
             }, void 0, false, {
                 fileName: "scource/App.js",
-                lineNumber: 7,
-                columnNumber: 9
+                lineNumber: 10,
+                columnNumber: 13
             }, undefined)
         ]
     }, file.id, true, {
         fileName: "scource/App.js",
-        lineNumber: 4,
-        columnNumber: 5
-    }, undefined));
+        lineNumber: 7,
+        columnNumber: 9
+    }, undefined);
+});
 _c1 = Htmlfilelist;
 function App() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
         children: Htmlfilelist
     }, void 0, false, {
         fileName: "scource/App.js",
-        lineNumber: 14,
+        lineNumber: 17,
         columnNumber: 9
     }, this);
 }

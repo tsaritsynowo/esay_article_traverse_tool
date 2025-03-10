@@ -10,8 +10,3 @@ root.render(
     <App />
   </StrictMode>
 );
-
-// 为组件添加按钮事件
-
-const articlecontainer = document.querySelector(".article-container");
-console.log(articlecontainer);
