@@ -2945,6 +2945,7 @@ var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$92f7.prelude(module);
 
 try {
+// 遍历文章组键位树
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _client = require("react-dom/client");
@@ -2955,14 +2956,17 @@ const root = (0, _client.createRoot)(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.StrictMode), {
     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appDefault.default), {}, void 0, false, {
         fileName: "scource/main.js",
-        lineNumber: 8,
+        lineNumber: 10,
         columnNumber: 5
     }, undefined)
 }, void 0, false, {
     fileName: "scource/main.js",
-    lineNumber: 7,
+    lineNumber: 9,
     columnNumber: 3
 }, undefined));
+// 为组件添加按钮事件
+const articlecontainer = document.querySelector(".article-container");
+console.log(articlecontainer);
 
   $parcel$ReactRefreshHelpers$92f7.postlude(module);
 } finally {
@@ -18578,8 +18582,37 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _filelistJson = require("./file/filelist.json");
 var _filelistJsonDefault = parcelHelpers.interopDefault(_filelistJson);
 const Htmlfilelist = (0, _filelistJsonDefault.default).map(_c = (file)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-        children: file.content
-    }, file.id, false, {
+        class: "article-container",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: file.title
+            }, void 0, false, {
+                fileName: "scource/App.js",
+                lineNumber: 5,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                class: "author_date",
+                children: [
+                    file.author,
+                    " ",
+                    file.date
+                ]
+            }, void 0, true, {
+                fileName: "scource/App.js",
+                lineNumber: 6,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                class: "content",
+                children: file.content
+            }, void 0, false, {
+                fileName: "scource/App.js",
+                lineNumber: 7,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, file.id, true, {
         fileName: "scource/App.js",
         lineNumber: 4,
         columnNumber: 5
@@ -18590,7 +18623,7 @@ function App() {
         children: Htmlfilelist
     }, void 0, false, {
         fileName: "scource/App.js",
-        lineNumber: 12,
+        lineNumber: 14,
         columnNumber: 9
     }, this);
 }
@@ -18605,7 +18638,10 @@ $RefreshReg$(_c2, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./file/filelist.json":"hOpaa"}],"gkKU3":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","./file/filelist.json":"hOpaa","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hOpaa":[function(require,module,exports,__globalThis) {
+module.exports = JSON.parse('[{"title":"\u8FD9\u662F\u6D4B\u8BD5\u6587\u68631\u7684\u6807\u9898","content":"\u8FD9\u662F\u6D4B\u8BD5\u6587\u68631","id":"1","author":"\u4F5A\u540D","date":"2025-3-10","tags":[],"comments":[],"department":""},{"title":"\u8FD9\u662F\u6D4B\u8BD5\u6587\u68632\u7684\u6807\u9898","content":"\u8FD9\u662F\u6D4B\u8BD5\u6587\u68632\u8FD9\u662F\u6D4B\u8BD5\u6587\u68632\u8FD9\u662F\u6D4B\u8BD5\u6587\u68632\u8FD9\u662F\u6D4B\u8BD5\u6587\u68632\u8FD9\u662F\u6D4B\u8BD5\u6587\u68632\u8FD9\u662F\u6D4B\u8BD5\u6587\u68632\u8FD9\u662F\u6D4B\u8BD5\u6587\u68632\u8FD9\u662F\u6D4B\u8BD5\u6587\u68632\u8FD9\u662F\u6D4B\u8BD5\u6587\u68632\u8FD9\u662F\u6D4B\u8BD5\u6587\u68632\u8FD9\u662F\u6D4B\u8BD5\u6587\u68632\u8FD9\u662F\u6D4B\u8BD5\u6587\u68632\u8FD9\u662F\u6D4B\u8BD5\u6587\u68632\u8FD9\u662F\u6D4B\u8BD5\u6587\u68632","id":"2","author":"\u4F5A\u540D","date":"2025-3-10","tags":[],"comments":[],"department":""},{"title":"\u8FD9\u662F\u6D4B\u8BD5\u6587\u68633\u7684\u6807\u9898","content":"\u8FD9\u662F\u6D4B\u8BD5\u6587\u68633","id":"3","author":"\u4F5A\u540D","date":"2025-3-10","tags":[],"comments":[],"department":""}]');
+
+},{}],"gkKU3":[function(require,module,exports,__globalThis) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -18779,9 +18815,6 @@ function registerExportsForReactRefresh(module1) {
 
 },{"7422ead32dcc1e6b":"786KC","630b62916b1ae0e7":"4SQxb"}],"4SQxb":[function(require,module,exports,__globalThis) {
 module.exports = JSON.parse("{\"name\":\"react-refresh\",\"description\":\"React is a JavaScript library for building user interfaces.\",\"keywords\":[\"react\"],\"version\":\"0.14.2\",\"homepage\":\"https://reactjs.org/\",\"bugs\":\"https://github.com/facebook/react/issues\",\"license\":\"MIT\",\"files\":[\"LICENSE\",\"README.md\",\"babel.js\",\"runtime.js\",\"cjs/\",\"umd/\"],\"main\":\"runtime.js\",\"exports\":{\".\":\"./runtime.js\",\"./runtime\":\"./runtime.js\",\"./babel\":\"./babel.js\",\"./package.json\":\"./package.json\"},\"repository\":{\"type\":\"git\",\"url\":\"https://github.com/facebook/react.git\",\"directory\":\"packages/react\"},\"engines\":{\"node\":\">=0.10.0\"},\"devDependencies\":{\"react-16-8\":\"npm:react@16.8.0\",\"react-dom-16-8\":\"npm:react-dom@16.8.0\",\"scheduler-0-13\":\"npm:scheduler@0.13.0\"}}");
-
-},{}],"hOpaa":[function(require,module,exports,__globalThis) {
-module.exports = JSON.parse('[{"name":"","content":"\u8FD9\u662F\u6D4B\u8BD5\u6587\u68631","id":"1"},{"name":"","content":"\u8FD9\u662F\u6D4B\u8BD5\u6587\u68632","id":"2"},{"name":"","content":"\u8FD9\u662F\u6D4B\u8BD5\u6587\u68633","id":"3"}]');
 
 },{}]},["aQL8O","8HyBA","c8qyo"], "c8qyo", "parcelRequire94c2")
 
